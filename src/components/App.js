@@ -6,7 +6,7 @@ function App() {
 
   // replace 'false' with a state variable that can be toggled between true and false
   // this will be used for the Dark Mode Toggle feature
-  const [mode, setMode] = useState("Dark")
+  const [mode, setMode] = useState("Light")
   const [toggle, setToggle] = useState(false)
   
   function swapTheme(toggle) {
@@ -24,7 +24,7 @@ function App() {
     <div className={appClass}>
       <header>
         <h2>Shopster</h2>
-        <button onClick={()=>swapTheme(toggle)}>{mode} Mode</button>
+        <button onClick={()=>{swapTheme(toggle)}}>{mode} Mode</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
