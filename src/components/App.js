@@ -8,23 +8,16 @@ function App() {
   // this will be used for the Dark Mode Toggle feature
   const [mode, setMode] = useState("Dark")
   const [toggle, setToggle] = useState(false)
-  let appClass = {toggle} ? "App dark" : "App light"
-
+  
   function swapTheme(toggle) {
-    appClass = {toggle} ? "App dark" : "App light"
     if (toggle == true){
       setToggle(false)
       setMode("Light")
     } else {setToggle(true)
       setMode("Dark")}
-    console.log(toggle)
-    console.log(mode)
-    console.log(appClass)
   }
-    // console.log(toggle)
-    // console.log(mode)
-    // console.log(appClass)
-    // appClass = {toggle} ? "App dark" : "App light"
+
+  const appClass = toggle ? "App dark" : "App light"
  
 
   return (
