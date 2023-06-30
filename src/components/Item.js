@@ -21,7 +21,6 @@ function Item({ name, category }) {
       setCartLabel("Remove from Cart")
       setCartClass("remove")
     }
-    console.log("item clicked")
   }
 
 

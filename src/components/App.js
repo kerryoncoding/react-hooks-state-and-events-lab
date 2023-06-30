@@ -8,6 +8,9 @@ function App() {
   // this will be used for the Dark Mode Toggle feature
   const [mode, setMode] = useState("Light")
   const [toggle, setToggle] = useState(false)
+
+ // const [items, setItems] = useState(itemData)
+
   
   function swapTheme(toggle) {
     if (toggle == true){
